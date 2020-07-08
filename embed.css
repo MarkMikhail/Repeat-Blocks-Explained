@@ -4,18 +4,22 @@ html, body {
   margin: 0;
   width: 100%;
   text-align: center;
-  background-color: #1a1a1a;
+  background-image: url(media/bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-color: #444;
   box-sizing: border-box;
   overflow: hidden;
+  height: 100vh;
+  display: flex;
 }
 
 .smart-player-embed-container {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1920px;
+  margin: auto;
+  width: 80%;
   height: 0;
-  overflow: hidden;
-  padding-top: calc(1080 / 1920 * 100%);
+  overflow: auto;
+  padding-top: calc(1080 / 1920 * 80%);
   position: relative;
 }
 
