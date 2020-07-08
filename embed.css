@@ -4,7 +4,7 @@ html, body {
   margin: 0;
   width: 100%;
   text-align: center;
-  background-image: url(media/bg.jpg);
+  background-image: url(media/bg.png);
   background-size: cover;
   background-position: center;
   background-color: #444;
@@ -18,7 +18,7 @@ html, body {
   margin: auto;
   width: 80%;
   height: 0;
-  overflow: auto;
+  overflow: hidden;
   padding-top: calc(1080 / 1920 * 80%);
   position: relative;
 }
@@ -38,9 +38,17 @@ html, body {
   max-height: 100%;
 }
 
+@media screen and (max-width: 550px) {
+  .smart-player-embed-container {
+    width: 100%;
+    padding-top: calc(1080 / 1920 * 100%);
+  }
+}
+
 @media screen and ( max-height: 1080px )
 {
-   .smart-player-embed-iframe {
-     max-height: 100vh;
-   }
+  .smart-player-embed-iframe {
+    max-height: 100vh;
+  }
 }
+
